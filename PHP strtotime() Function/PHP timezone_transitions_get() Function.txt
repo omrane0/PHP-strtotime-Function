@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$timezone = new DateTimeZone("Europe/Paris");
+// Procedural style
+print_r(reset(timezone_transitions_get($timezone)));
+
+echo "<br><br>";
+
+// Object oriented style
+print_r(reset($timezone->getTransitions()));
+?>
+
+</body>
+</html>
+
+
+
+
+Array ( [ts] => -9223372036854775808 [time] => -292277022657-01-27T08:29:52+0000 [offset] => 561 [isdst] => [abbr] => LMT )
+
+Array ( [ts] => -9223372036854775808 [time] => -292277022657-01-27T08:29:52+0000 [offset] => 561 [isdst] => [abbr] => LMT )
